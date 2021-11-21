@@ -19,7 +19,7 @@ merger = PdfFileMerger()
 files = naturalSort(os.listdir(currDir)) 
 
 for i, item in enumerate(files):
-    if str(item).lower().endswith(".pdf"):
+    if str(item).lower().endswith(".pdf") and not "Merged__" in str(item):
         print(f"{str(pdfCou+1).zfill(2).rjust(3)}- PDF found: {item}")
         pdfCou += 1
         merger.append(item)
