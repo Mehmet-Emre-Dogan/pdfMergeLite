@@ -1,6 +1,15 @@
 # pdfMergeLite
  Merge pdf files
+# Usage
+- Put your pdf files that you want to merge in a folder
+- Rename them according to the order you want to merge (The code considers the alphabetical ascending order, A->Z)
+- Put the .py file on the same folder
+- Run the .py file
+# Setup
+Install python
+Install the libraries in the "requirements.txt"
 # Acknowledgements & License
+## pypdf2
 Copyright (c) 2006-2008, Mathieu Fenniak
 Some contributions copyright (c) 2007, Ashish Kulkarni <kulkarni.ashish@gmail.com>
 Some contributions copyright (c) 2014, Steve Witham <switham_github@mac-guyver.com>
