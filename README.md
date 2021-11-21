@@ -6,8 +6,8 @@
 - Put the .py file on the same folder
 - Run the .py file
 # Setup
-Install python
-Install the libraries in the "requirements.txt"
+- Install python
+- Install the libraries in the "requirements.txt"
 # Acknowledgements & License
 ## pypdf2
 Copyright (c) 2006-2008, Mathieu Fenniak
