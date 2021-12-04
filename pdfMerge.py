@@ -20,9 +20,13 @@ files = naturalSort(os.listdir(currDir))
 
 for i, item in enumerate(files):
     if str(item).lower().endswith(".pdf") and not "Merged__" in str(item):
-        print(f"{str(pdfCou+1).zfill(2).rjust(3)}- PDF found: {item}")
-        pdfCou += 1
-        merger.append(item)
+        if "ignoremerge" in str(item).lower():
+            print(f"{'   --> Ignoring file:'} {item}")
+            continue
+        else:
+            print(f"{str(pdfCou+1).zfill(2).rjust(3)}- PDF found: {item}")
+            pdfCou += 1
+            merger.append(item)
 if pdfCou:
     customDT = datetime.datetime.now().strftime('%Y-%m-%d_%H.%M.%S')
     print("Merging your files. Please wait...")
